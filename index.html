@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+</head>
+<style>
+   body{
+    background: #000;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+    .nav{
+        background: #070724;
+        width: 100vw;
+        height: 2.5rem;
+        text-align: center;
+        color: beige;
+    }
+    #wrapper {
+        margin-top:2rem;
+        text-align: center;
+        opacity: 0.5;
+        font-weight: 800;
+
+    }
+    #paragraph{
+        margin-top: 1.5rem;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 1rem;
+        
+    } 
+    #guess{
+        text-align: center;
+
+    }
+    .guessParas{
+        text-align: center;
+    }
+    #guessField{
+        width:40%;
+        height: 2rem;
+        border: 1px solid black;
+        margin: 0.5rem 0 0.5rem 0;
+        align-self: center;
+        border-radius: 15px;
+        text-align: center;
+         background: #595d75;
+         color: white;
+    }
+    #sub{
+        width:40%;
+        height: 2rem;
+        border: 1px solid black;
+        margin: 0.5rem 0 0.5rem 0;
+        align-self: center;
+        border-radius: 15px;
+        text-align: center;
+        background: #595d75;
+    }
+    .lastrel{
+        margin-top: 2rem;
+
+
+    }
+    #previous{
+        margin-top:1.5rem;
+    }
+    #ab{
+        margin-top:2rem;
+    }
+    .foot{
+       text-align: center;
+       margin-top: 3rem;
+       color: bisque;
+       
+    }
+   
+@media (max-width: 600px) {
+
+  .nav h1 {
+    font-size: 1.2rem;
+  }
+
+  #wrapper h1 {
+    font-size: 1.5rem;
+  }
+
+  #paragraph,
+  #ab {
+    font-size: 0.9rem;
+  }
+
+  #guessField,
+  #sub {
+    width: 80%;
+    height: 2.2rem;
+  }
+
+  .guessParas {
+    font-size: 0.9rem;
+  }
+
+  .foot {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+  }
+}
+
+</style>
+<body>
+    <div class="nav">
+<h1>Welcome to playGround</h1>
+    </div>
+   <div id="wrapper">
+     <h1>Guess The Number</h1>
+    <p id="paragraph">Try and guess a random number between 1 to 100</p>
+    <p id="ab">You have to 10 attempt to guess right number</p>
+   </div>
+    <form>
+        <label for="guessField" id="guess">Enter the Number:</label><input type="number" id="guessField" placeholder="Enter the number">
+       <button id="sub" type="submit">Submit</button>
+        
+    </form>
+   <div class="guessParas">
+    <p id="previous">Previous Result:<span class="guesses"></span></p>
+    <p>Guesses Remaining:<span class="lastrel">10</span></p>
+    <p class="loworhi"></p>
+   </div>
+   <footer class="foot">
+    &copy; 2026 Divyanshu Gupta
+   </footer>
+
+     
+</body>
+<script src="game.js"></script>
+
+</html>
