@@ -20,7 +20,7 @@ body {
 
 
 .nav {
-    background: #070724;
+    background: #bfbfc1;
     height: 3rem;
     display: flex;
     align-items: center;
@@ -29,7 +29,8 @@ body {
 
 .nav h1 {
     font-size: 1.4rem;
-    color: bisque;
+    color:#212121;
+    font-weight: 800;
 }
 
 
