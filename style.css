@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        rgba(42, 123, 155, 1),
+        rgba(66, 146, 157, 1),
+        rgba(152, 158, 163, 1)
+    );
+    color: white;
+}
+
+
+.nav {
+    background: #070724;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav h1 {
+    font-size: 1.4rem;
+    color: bisque;
+}
+
+
+#wrapper {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+#wrapper h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+#paragraph,
+#ab {
+    margin-top: 0.6rem;
+    color: #f0f0f0;
+    font-size: 1rem;
+}
+
+
+form {
+    width: 350px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+
+#guess {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+#guessField {
+    height: 2.3rem;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    background: #6b6c71;
+    color: white;
+    outline: none;
+}
+
+#guessField::placeholder {
+    color: #ccc;
+}
+
+
+#sub {
+    height: 2.4rem;
+    border-radius: 20px;
+    border: none;
+    background: rgb(220, 58, 58);
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#sub:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+.guessParas {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+#previous,
+.lastrel,
+.loworhi {
+    margin-top: 0.6rem;
+    font-size: 1rem;
+}
+
+
+.foot {
+    text-align: center;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    color: bisque;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 600px) {
+
+    .nav h1 {
+        font-size: 1.1rem;
+    }
+
+    #wrapper h1 {
+        font-size: 1.5rem;
+    }
+
+    #paragraph,
+    #ab {
+        font-size: 0.9rem;
+    }
+
+    form {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    #guessField,
+    #sub {
+        height: 2.5rem;
+        font-size: 0.95rem;
+    }
+
+    .guessParas {
+        font-size: 0.9rem;
+    }
+
+    .foot {
+        font-size: 0.8rem;
+        margin-top: 2rem;
+    }
+}
